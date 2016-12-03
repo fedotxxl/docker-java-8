@@ -1,3 +1,5 @@
+# docker build -t fbelov/java-8:latest .
+# docker push fbelov/java-8:latest
 #
 # Oracle Java 8 Dockerfile
 #
@@ -28,4 +30,4 @@ WORKDIR /data
 ENV JAVA_HOME /usr/lib/jvm/java-8-oracle
 
 # Define default command.
-CMD ["bash"]
+CMD /sbin/my_init
